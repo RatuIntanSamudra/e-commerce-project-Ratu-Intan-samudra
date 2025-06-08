@@ -1,0 +1,153 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf6f0;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ffe0e9;
+  padding: 20px 0;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #d36c6c;
+}
+
+.logo span {
+  color: #f4978e;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #6d6875;
+  font-weight: 600;
+}
+
+.hero {
+  background-color: #faf3dd;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #444;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.produk-terbaru {
+  padding: 40px 0;
+}
+
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.produk-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produk-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.produk-item h3 {
+  margin: 10px 0 5px;
+  color: #ba68c8;
+}
+
+.produk-item p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.harga {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.kategori {
+  background-color: #e0f7fa;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.kategori-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 600;
+  color: #00796b;
+}
+
+.tentang {
+  background-color: #f3e5f5;
+  padding: 40px 0;
+}
+
+footer {
+  background-color: #ffe0e9;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .produk-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .kategori-list {
+    flex-direction: column;
+  }
+}
